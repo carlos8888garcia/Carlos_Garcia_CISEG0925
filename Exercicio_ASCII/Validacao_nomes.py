@@ -1,11 +1,4 @@
 def comparar_nomes(nome1, nome2):
-    """
-    Compara dois nomes caractere a caractere usando valores ASCII.
-    Retorna:
-    -1 se nome1 vem antes de nome2
-     1 se nome1 vem depois de nome2
-     0 se são iguais
-    """
     tamanho_minimo = min(len(nome1), len(nome2))
     
     for i in range(tamanho_minimo):
