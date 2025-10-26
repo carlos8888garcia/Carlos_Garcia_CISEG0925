@@ -1,12 +1,10 @@
 def calcular_chave(chave):
-    """Soma os valores ASCII de cada letra da chave."""
     soma = 0
     for letra in chave:
         soma += ord(letra)
     return soma
 
 def criptografar(mensagem, chave):
-    """Criptografa a mensagem."""
     if chave == "":
         print("Erro: A chave não pode ser vazia!")
         return None
@@ -30,7 +28,6 @@ def criptografar(mensagem, chave):
     return codigos
 
 def descriptografar(codigos, chave):
-    """Descriptografa os códigos."""
     if chave == "":
         print("Erro: A chave não pode ser vazia!")
         return None
@@ -51,7 +48,6 @@ def descriptografar(codigos, chave):
     return mensagem
 
 def listar(codigos):
-    """Mostra os códigos criptografados."""
     print("\nMensagem criptografada:")
     print(codigos)
 
@@ -90,7 +86,7 @@ while True:
             print(f"\nMensagem original: {resultado}")
     
     elif opcao == "3":
-        print("\nAté breve!")
+        print("\nAdeus!")
         break
     
     else:
